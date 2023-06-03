@@ -1,1 +1,1 @@
-<h1 align="center">Buzz Wise App<h1>
+<h1 align="center">Buzz Wise<h1>
