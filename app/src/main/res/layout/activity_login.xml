@@ -17,15 +17,28 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/cancel"
+        android:textColor="#3E54AC"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
         android:id="@+id/hi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="140dp"
         android:layout_marginTop="10dp"
-        android:text="@string/hi"
+        android:text="@string/welcome"
         android:fontFamily="sans-serif"
         android:textStyle="bold"
-        android:textSize="25sp"
+        android:textSize="30sp"
         app:layout_constraintTop_toBottomOf="@id/splashLogo"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -33,8 +46,8 @@
         android:id="@+id/welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:text="@string/welcome"
+        android:layout_marginStart="70dp"
+        android:text="@string/welcome_signin"
         android:fontFamily="sans-serif"
         android:textStyle="bold"
         android:textColor="#3E54AC"
@@ -42,81 +55,59 @@
         app:layout_constraintTop_toBottomOf="@id/hi"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <com.example.buzzwiseapp.ui.custom.EmailEditText
-        android:id="@+id/ed_login_email"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="28dp"
-        android:hint="@string/email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/welcome"
-        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large"></com.example.buzzwiseapp.ui.custom.EmailEditText>
-
-    <com.example.buzzwiseapp.ui.custom.PasswordEditText
-        android:id="@+id/ed_login_password"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="28dp"
-        android:hint="@string/password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ed_login_email"
-        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large"></com.example.buzzwiseapp.ui.custom.PasswordEditText>
-
-    <Button
-        android:id="@+id/button_login"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="200dp"
-        android:text="@string/login"
-        app:backgroundTint="#3E54AC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/txtOr"
+    <ImageView
+        android:id="@+id/splashimg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/or"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="190dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button_login"/>
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="65dp"
+        android:src="@drawable/signinjob"
+        app:layout_constraintTop_toBottomOf="@id/welcome"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/signInButton"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="55dp"
         android:layout_marginEnd="28dp"
         app:cornerRadius="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtOr" />
+        app:layout_constraintTop_toBottomOf="@id/splashimg" />
 
 
     <TextView
+        android:id="@+id/byContinuing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="164dp"
+        android:layout_marginEnd="155dp"
         android:layout_marginBottom="75dp"
-        android:text="@string/dontHave"
+        android:text="@string/bycontiuing"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/button_to_register"
+        android:id="@+id/appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="112dp"
+        android:layout_marginEnd="70dp"
         android:layout_marginBottom="75dp"
-        android:text="@string/signUp"
+        android:text="@string/buzz"
         android:textColor="#3E54AC"
         android:textSize="15sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/byContinuing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/term"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/term"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

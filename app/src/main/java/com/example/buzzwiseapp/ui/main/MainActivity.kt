@@ -5,15 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.navigation.findNavController
-import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.buzzwiseapp.R
 
 import com.example.buzzwiseapp.databinding.ActivityMainBinding
-import com.example.buzzwiseapp.ui.auth.AuthActivity
 import com.example.buzzwiseapp.ui.auth.LoginActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
@@ -31,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
+        getSupportActionBar()?.setDisplayShowTitleEnabled(true)
 
         val navView: BottomNavigationView = binding.navView
 
@@ -41,6 +41,15 @@ class MainActivity : AppCompatActivity() {
         ).build()
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            if(destination.id == R.id.navigation_explore) {
+                supportActionBar?.hide()
+
+            } else {
+                supportActionBar?.show()
+            }
+        }
 
         auth = Firebase.auth
         val firebaseUser = auth.currentUser

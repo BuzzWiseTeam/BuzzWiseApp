@@ -2,12 +2,15 @@
     <string name="app_name">BuzzWiseApp</string>
 
     <string name="hi">Hi there!</string>
-    <string name="welcome">Welcome Back</string>
-    <string name="welcome_register">Welcome !</string>
+    <string name="welcome">Welcome !</string>
+    <string name="welcome_signin">Sign In to Your Account</string>
     <string name="login">Login</string>
     <string name="or">OR</string>
+    <string name="cancel">Cancel</string>
     <string name="register">Register</string>
-    <string name="dontHave">Don’t have account?</string>
+    <string name="bycontiuing">By continuing, you agree to</string>
+    <string name="buzz">Buzz Wise\'s</string>
+    <string name="term">Term of Use and Privacy Policy</string>
     <string name="signUp">Sign Up</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
@@ -28,4 +31,25 @@
     <string name="logout">Logout</string>
     <string name="splashtext">You don\'t need to have a good experience to get a job</string>
     <string name="btn_splash">Get Started</string>
+    <string name="specialist">Specialist</string>
+    <string name="company">Company</string>
+    <string name="location">Location</string>
+    <string name="available">Available job for you</string>
+    <string name="txt_toolbar">Let\'s Find Jobs</string>
+    <string name="searchbar_hint">Search job or user</string>
+    <string name="txt_title">AC Service</string>
+    <string name="txt_company">Samsung Service Center</string>
+    <string name="txt_location">Jakarta, Indonesia</string>
+    <string name="txt_email">servicecenter@samsung.id</string>\
+    <string name="txt_work">Full-time</string>
+    <string name="txt_skill">Skill: </string>
+    <string name="txt_jobdesc">Job Description</string>
+    <string name="txt_jobdescdet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at quam sit amet purus consequat ultricies. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris a nunc vestibulum, feugiat felis sit amet, lacinia sem. Fusce et tincidunt augue, nec bibendum quam. Nam viverra eros nisi, quis porttitor eros condimentum sit amet. Vestibulum vehicula, sem vel finibus fringilla, nisl lacus tincidunt sapien, ut ultricies arcu lacus non nisl. Vivamus vel feugiat ante, quis gravida libero. In ullamcorper, ante quis accumsan gravida, velit odio pellentesque diam, eget egestas felis libero eu leo. Aliquam gravida, eros eu feugiat sagittis, risus elit cursus sapien, eu ultrices leo nisi et diam.
+Short-term earning potential
+Short-term earning potential
+Short-term earning potential
+Flexible working hours in a work-from-home setup
+ In ullamcorper, ante quis accumsan gravida, velit odio pellentesque diam.</string>
+    <string name="txt_profdesc">Profile Description</string>
+    <string name="txt_status">Status: </string>
 </resources>
