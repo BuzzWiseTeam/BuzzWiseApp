@@ -1,0 +1,3 @@
+[submodule "vendor/BuzzWiseBackEnd"]
+	path = vendor/BuzzWiseBackEnd
+	url = https://github.com/BuzzWiseTeam/BuzzWiseBackEnd.git
