@@ -12,13 +12,17 @@
         android:theme="@style/Theme.BuzzWiseApp"
         tools:targetApi="31">
         <activity
+            android:name=".profileDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JobDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.auth.RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".ui.auth.LoginActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".ui.SplashActivity"
             android:exported="true">
@@ -35,10 +39,7 @@
             android:theme="@style/Theme.BuzzWiseApp" />
         <activity
             android:name=".ui.auth.AuthActivity"
-            android:exported="true">
-
-        </activity>
-
+            android:exported="true" />
     </application>
 
 </manifest>

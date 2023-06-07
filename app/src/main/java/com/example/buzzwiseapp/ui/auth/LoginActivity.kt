@@ -8,6 +8,7 @@ import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.buzzwiseapp.R
 import com.example.buzzwiseapp.databinding.ActivityLoginBinding
+import com.example.buzzwiseapp.ui.SplashActivity
 import com.example.buzzwiseapp.ui.main.MainActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -32,16 +33,8 @@ class LoginActivity : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        binding.buttonLogin.setOnClickListener{
-            Intent(this, MainActivity::class.java).also { intent ->
-                startActivity(intent)
-                finish()
-            }
-        }
-
-        binding.buttonToRegister.setOnClickListener {
-            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
-            startActivity(intent)
+        binding.tvCancel.setOnClickListener{
+            startActivity(Intent(this, SplashActivity::class.java))
         }
 
         binding.signInButton.setOnClickListener{

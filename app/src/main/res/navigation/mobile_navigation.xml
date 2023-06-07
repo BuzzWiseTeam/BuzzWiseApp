@@ -7,17 +7,16 @@
 
     <fragment
         android:id="@+id/navigation_home"
+        android:label="Let's Find Jobs"
         android:name="com.example.buzzwiseapp.ui.home.HomeFragment"
-        android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/navigation_explore"
         android:name="com.example.buzzwiseapp.ui.explore.ExploreFragment"
-        android:label="fragment_explore"
         tools:layout="@layout/fragment_explore" />
     <fragment
         android:id="@+id/navigation_profile"
+        android:label="My Profile"
         android:name="com.example.buzzwiseapp.ui.profile.ProfileFragment"
-        android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>
