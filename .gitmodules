@@ -1,3 +1,6 @@
 [submodule "vendor/BuzzWiseBackEnd"]
 	path = vendor/BuzzWiseBackEnd
 	url = https://github.com/BuzzWiseTeam/BuzzWiseBackEnd
+[submodule "vendor/BuzzWiseMachineLearningModel"]
+	path = vendor/BuzzWiseMachineLearningModel
+	url = https://github.com/BuzzWiseTeam/BuzzWiseMachineLearningModel
