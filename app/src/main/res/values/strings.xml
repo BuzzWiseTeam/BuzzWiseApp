@@ -52,4 +52,5 @@ Flexible working hours in a work-from-home setup
  In ullamcorper, ante quis accumsan gravida, velit odio pellentesque diam.</string>
     <string name="txt_profdesc">Profile Description</string>
     <string name="txt_status">Status: </string>
+    <string name="retry">Retry</string>
 </resources>
