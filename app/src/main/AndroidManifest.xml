@@ -6,16 +6,16 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo_bw2"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.BuzzWiseApp"
         tools:targetApi="31">
         <activity
-            android:name=".profileDetailActivity"
+            android:name=".ui.profiledetail.profileDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".JobDetailActivity"
+            android:name=".ui.jobdetail.JobDetailActivity"
             android:exported="false" />
         <activity
             android:name=".ui.auth.RegisterActivity"
@@ -37,9 +37,6 @@
             android:exported="false"
             android:label="@string/app_name"
             android:theme="@style/Theme.BuzzWiseApp" />
-        <activity
-            android:name=".ui.auth.AuthActivity"
-            android:exported="true" />
     </application>
 
 </manifest>

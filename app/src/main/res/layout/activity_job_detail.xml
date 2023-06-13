@@ -23,8 +23,8 @@
             app:layout_constraintTop_toTopOf="parent"/>
         <ImageView
             android:id="@+id/iv_detail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             tools:src="@tools:sample/avatars"
             android:layout_marginTop="10dp"
             android:layout_marginStart="30dp"
@@ -155,6 +155,15 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_jobdescdet"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

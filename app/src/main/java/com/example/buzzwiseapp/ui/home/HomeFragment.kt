@@ -5,56 +5,69 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.viewModels
+import androidx.core.view.isVisible
+import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.buzzwiseapp.R
+import com.example.buzzwiseapp.data.JobAdapter
+import com.example.buzzwiseapp.data.ViewModelFactory
+import com.example.buzzwiseapp.data.response.DataItem
+import com.example.buzzwiseapp.databinding.FragmentHomeBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class HomeFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
+    private lateinit var binding: FragmentHomeBinding
+
+    private val mainViewModel by viewModels<HomeViewModel> {
+        ViewModelFactory()
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
+        binding = FragmentHomeBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+        binding.root.setOnRefreshListener {
+            setupView()
         }
+        setupView()
+        setupViewModel()
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
+        setupView()
+        setupViewModel()
+        //return view
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    private fun setupView() {
+        binding.root.isRefreshing = false
+        mainViewModel.getJob()
     }
+
+    private fun setupViewModel() {
+        mainViewModel.listJob.observe(requireActivity()) {
+            setRecycleView(it)
+        }
+        mainViewModel.loadingScreen.observe(requireActivity()) {
+            showLoading(it)
+        }
+    }
+    private fun showLoading(value: Boolean) {
+        binding.pbLoadingScreen.isVisible = value
+        binding.rvListMain.isVisible = !value
+    }
+    private fun setRecycleView(list: List<DataItem>) {
+        with(binding) {
+            val manager = LinearLayoutManager(requireActivity())
+            rvListMain.apply {
+                adapter = JobAdapter(list)
+                layoutManager = manager
+            }
+        }
+    }
+
 }
