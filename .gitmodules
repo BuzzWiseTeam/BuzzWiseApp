@@ -4,3 +4,6 @@
 [submodule "vendor/BuzzWiseMachineLearning"]
 	path = vendor/BuzzWiseMachineLearning
 	url = https://github.com/BuzzWiseTeam/BuzzWiseMachineLearning
+[submodule "vendor/BuzzWiseWebsite"]
+	path = vendor/BuzzWiseWebsite
+	url = https://github.com/BuzzWiseTeam/BuzzWiseWebsite
