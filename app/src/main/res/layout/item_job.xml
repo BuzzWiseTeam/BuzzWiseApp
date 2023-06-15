@@ -8,7 +8,8 @@
     android:layout_marginStart="10dp"
     android:layout_marginEnd="10dp"
     android:layout_marginTop="5dp"
-    android:layout_marginBottom="5dp">
+    android:layout_marginBottom="5dp"
+    style="@style/Widget.Material3.CardView.Elevated">
 
     <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
@@ -32,8 +33,9 @@
             android:padding="5dp"
             android:text="@string/specialist"
             android:textColor="#3E54AC"
-            android:textSize="15sp"
+            android:textSize="17sp"
             android:textStyle="bold"
+            android:fontFamily="@font/robotoblack"
             app:layout_constraintStart_toEndOf="@id/img_avatar"
             app:layout_constraintTop_toTopOf="parent"/>
 
@@ -43,8 +45,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
             android:padding="5dp"
+            android:textStyle="bold"
             android:text="@string/company"
-            android:textSize="10sp"
+            android:fontFamily="@font/robotoblack"
+            android:textSize="12sp"
             app:layout_constraintTop_toBottomOf="@id/tv_specialist" />
 
         <TextView
@@ -54,8 +58,18 @@
             android:layout_marginStart="100dp"
             android:padding="5dp"
             android:text="@string/location"
-            android:textSize="10sp"
+            android:textSize="12sp"
+            android:fontFamily="@font/robotoregular"
             app:layout_constraintTop_toBottomOf="@id/tv_company" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="325dp"
+            android:layout_marginBottom="28dp"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

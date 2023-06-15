@@ -1,20 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.profile.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
     <TextView
-        android:id="@+id/text_profile"
-        android:layout_width="match_parent"
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
+        android:text="Name User"
+        android:textSize="17sp"
+        android:textColor="#3E54AC"
+        android:fontFamily="@font/robotobold"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@id/iv_profile"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/tv_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/txt_acc"
         android:textSize="20sp"
-        android:text="This is profile fragment"/>
+        android:fontFamily="@font/robotobold"
+        app:layout_constraintTop_toBottomOf="@+id/iv_profile"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-</FrameLayout>
+    <Button
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:id="@+id/btn_edit"
+        android:layout_marginTop="10dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="@string/txt_editprofile"
+        android:fontFamily="@font/robotobold"
+        android:textAlignment="textStart"
+        android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+        android:drawableLeft="@drawable/useravatar"
+        app:layout_constraintTop_toBottomOf="@+id/tv_acc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:id="@+id/btn_information"
+        android:layout_marginTop="7dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="@string/txt_information"
+        android:fontFamily="@font/robotobold"
+        android:textAlignment="textStart"
+        android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+        android:drawableLeft="@drawable/baseline_info_24"
+        app:layout_constraintTop_toBottomOf="@+id/btn_edit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/txt_about"
+        android:textSize="20sp"
+        android:fontFamily="@font/robotobold"
+        app:layout_constraintTop_toBottomOf="@+id/btn_information"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:id="@+id/btn_privacy"
+        android:layout_marginTop="10dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="@string/txt_privacy"
+        android:fontFamily="@font/robotobold"
+        android:textAlignment="textStart"
+        android:drawableLeft="@drawable/iconprivacy"
+        app:layout_constraintTop_toBottomOf="@+id/tv_about"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:id="@+id/btn_version"
+        android:layout_marginTop="7dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="@string/txt_version"
+        android:fontFamily="@font/robotobold"
+        android:textAlignment="textStart"
+        android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+        android:drawableLeft="@drawable/iconversion"
+        app:layout_constraintTop_toBottomOf="@+id/btn_privacy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:id="@+id/btn_logout"
+        android:layout_marginTop="15dp"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="@string/txt_logout"
+        android:textColor="@color/white"
+        android:fontFamily="@font/robotobold"
+        android:backgroundTint="#A60D0D"
+        app:layout_constraintTop_toBottomOf="@+id/btn_version"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

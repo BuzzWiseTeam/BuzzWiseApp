@@ -6,6 +6,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.buzzwiseapp.data.api.ApiConfig
+import com.example.buzzwiseapp.data.model.UserPreference
 import com.example.buzzwiseapp.data.response.DataItem
 import com.example.buzzwiseapp.data.response.JobResponse
 import retrofit2.Call

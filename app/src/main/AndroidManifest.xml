@@ -12,11 +12,19 @@
         android:theme="@style/Theme.BuzzWiseApp"
         tools:targetApi="31">
         <activity
-            android:name=".ui.profiledetail.profileDetailActivity"
+            android:name=".ui.profile.UserInformationActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.jobdetail.JobDetailActivity"
+            android:name=".ui.profile.EditProfileActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.profiledetail.profileDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BuzzWiseApp" />
+        <activity
+            android:name=".ui.jobdetail.JobDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BuzzWiseApp" />
         <activity
             android:name=".ui.auth.RegisterActivity"
             android:exported="false" />

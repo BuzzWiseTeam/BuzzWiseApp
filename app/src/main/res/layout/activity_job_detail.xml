@@ -10,21 +10,42 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                app:title="@string/job_dtl"
+                app:titleTextColor="#3E54AC"
+                android:fontFamily="@font/robotobold"
+                app:titleCentered="true"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
         <TextView
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="70dp"
             android:text="@string/txt_title"
             android:textSize="25dp"
+            android:fontFamily="@font/robotobold"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
         <ImageView
             android:id="@+id/iv_detail"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             tools:src="@tools:sample/avatars"
             android:layout_marginTop="10dp"
             android:layout_marginStart="30dp"
@@ -36,9 +57,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="72dp"
+            android:layout_marginTop="110dp"
             android:padding="5dp"
             android:text="@string/txt_company"
+            android:fontFamily="@font/robotoblack"
             android:textColor="#3E54AC"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -52,6 +74,7 @@
             android:padding="5dp"
             android:layout_marginStart="20dp"
             android:text="@string/txt_location"
+            android:fontFamily="@font/robotoregular"
             android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@id/iv_detail"
             app:layout_constraintTop_toBottomOf="@+id/tv_company" />
@@ -63,14 +86,30 @@
             android:layout_marginStart="20dp"
             android:padding="5dp"
             android:text="@string/txt_email"
+            android:fontFamily="@font/robotoregular"
             android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@id/iv_detail"
             app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Apply"
+            android:fontFamily="@font/robotoregular"
+            app:icon="@drawable/icapply"
+            android:textColor="@color/white"
+            app:iconGravity="textEnd"
+            app:backgroundTint="#3E54AC"
+            android:background="#3E54AC"
+            app:layout_constraintTop_toBottomOf="@+id/tv_jobdescdet"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
 
         <ImageView
             android:id="@+id/iv_work"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginStart="28dp"
             android:layout_marginTop="24dp"
             android:src="@drawable/work"
@@ -82,18 +121,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="24dp"
             android:text="@string/txt_work"
+            android:fontFamily="@font/robotoregular"
             app:layout_constraintStart_toEndOf="@+id/iv_work"
             app:layout_constraintTop_toBottomOf="@+id/iv_detail" />
 
         <ImageView
             android:id="@+id/iv_skill"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginStart="28dp"
             android:layout_marginTop="8dp"
-            android:src="@drawable/task"
+            android:src="@drawable/icskill"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/iv_work" />
 
@@ -102,7 +142,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="9dp"
             android:text="@string/txt_skill"
             app:layout_constraintStart_toEndOf="@+id/iv_skill"
             app:layout_constraintTop_toBottomOf="@+id/tv_work" />
@@ -112,8 +152,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="9dp"
             android:text="...."
+            android:fontFamily="@font/robotoregular"
             app:layout_constraintStart_toEndOf="@+id/tv_skill"
             app:layout_constraintTop_toBottomOf="@+id/tv_work" />
 
@@ -124,6 +165,7 @@
             android:layout_marginStart="28dp"
             android:layout_marginTop="24dp"
             android:text="@string/txt_jobdesc"
+            android:fontFamily="@font/robotobold"
             android:textSize="25dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -135,26 +177,16 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
             android:layout_marginEnd="28dp"
+            android:layout_marginTop="10dp"
             android:text="@string/txt_jobdescdet"
+            android:fontFamily="@font/robotoregular"
+            android:justificationMode="inter_word"
             android:textSize="15dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_jobdesc" />
 
-        <Button
-            android:id="@+id/elevatedButton"
-            style="@style/Widget.Material3.Button.ElevatedButton"
-            android:layout_width="275dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Apply"
-            android:textColor="@color/white"
-            app:icon="@drawable/baseline_attach_email_24"
-            app:iconGravity="textEnd"
-            app:backgroundTint="#3E54AC"
-            app:iconTint="@color/white"
-            app:layout_constraintTop_toBottomOf="@+id/tv_jobdescdet"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+
+
         <ProgressBar
             android:id="@+id/progress_bar"
             android:layout_width="wrap_content"

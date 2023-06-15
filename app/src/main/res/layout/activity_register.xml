@@ -20,12 +20,12 @@
         android:id="@+id/txtWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        android:fontFamily="sans-serif"
+        android:text="Welcome!"
+        android:fontFamily="@font/robotobold"
         android:textStyle="bold"
         android:textSize="25sp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/splashLogo"/>
     <TextView
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/createAccount"
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/robotobold"
         android:textStyle="bold"
         android:textSize="25sp"
         android:textColor="#3E54AC"
@@ -44,7 +44,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large"
-        android:id="@+id/ed_register_name"
+        android:id="@+id/layout_register_name"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -54,34 +54,50 @@
         app:layout_constraintTop_toBottomOf="@id/create">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_register_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="name" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
-
-    <com.example.buzzwiseapp.ui.custom.EmailEditText
-        android:id="@+id/ed_login_email"
+    <com.google.android.material.textfield.TextInputLayout
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large"
+        android:id="@+id/layout_register_email"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="28dp"
         android:hint="@string/email"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ed_register_name"
-        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large"></com.example.buzzwiseapp.ui.custom.EmailEditText>
+        app:layout_constraintTop_toBottomOf="@id/layout_register_name">
 
-    <com.example.buzzwiseapp.ui.custom.PasswordEditText
-        android:id="@+id/ed_login_password"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large"
+        android:id="@+id/layout_register_pass"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="28dp"
         android:hint="@string/password"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ed_login_email"
-        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Large"></com.example.buzzwiseapp.ui.custom.PasswordEditText>
+        app:layout_constraintTop_toBottomOf="@id/layout_register_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ed_register_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/button_register"
@@ -90,6 +106,7 @@
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="160dp"
         android:text="@string/register"
+        android:fontFamily="@font/robotoregular"
         app:backgroundTint="#3E54AC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -121,6 +138,7 @@
         android:layout_marginEnd="148dp"
         android:layout_marginBottom="45dp"
         android:text="@string/already"
+        android:fontFamily="@font/robotoregular"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -132,10 +150,22 @@
         android:layout_marginEnd="108dp"
         android:layout_marginBottom="45dp"
         android:text="@string/login"
+        android:fontFamily="@font/robotobold"
         android:textColor="#3E54AC"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_register"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,8 @@
 
     <string name="hi">Hi there!</string>
     <string name="welcome">Welcome !</string>
+    <string name="welcomeback">Welcome Back</string>
+    <string name="dontHave">Don’t have account?</string>
     <string name="welcome_signin">Sign In to Your Account</string>
     <string name="login">Login</string>
     <string name="or">OR</string>
@@ -36,6 +38,7 @@
     <string name="location">Location</string>
     <string name="available">Available job for you</string>
     <string name="txt_toolbar">Let\'s Find Jobs</string>
+    <string name="job_dtl">Job Detail</string>
     <string name="searchbar_hint">Search job or user</string>
     <string name="txt_title">AC Service</string>
     <string name="txt_company">Samsung Service Center</string>
@@ -53,4 +56,18 @@ Flexible working hours in a work-from-home setup
     <string name="txt_profdesc">Profile Description</string>
     <string name="txt_status">Status: </string>
     <string name="retry">Retry</string>
+    <string name="txt_acc">Account Profile</string>
+    <string name="txt_about">About BuzzWise</string>
+    <string name="txt_editprofile">Edit Profile</string>
+    <string name="txt_information">Information</string>
+    <string name="txt_privacy">Privacy Policy</string>
+    <string name="txt_version">Version</string>
+    <string name="txt_logout">Log Out</string>
+    <string name="btn_save">Save</string>
+    <string name="tbl_profile">Edit Profile</string>
+    <string name="tbl_yourinfo">Your Information</string>
+    <string name="headline">Headline</string>
+    <string name="skills">Skills</string>
+    <string name="about">About</string>
+    <string name="status">Status</string>
 </resources>

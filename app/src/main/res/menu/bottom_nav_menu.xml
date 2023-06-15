@@ -4,15 +4,18 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/home24px"
-        android:title="@string/title_home" />
+        android:title="@string/title_home"
+        android:fontFamily="@font/robotoregular"/>
 
     <item
         android:id="@+id/navigation_explore"
         android:icon="@drawable/explore24px"
-        android:title="@string/title_explore" />
+        android:title="@string/title_explore"
+        android:fontFamily="@font/robotoregular"/>
 
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/accountcircle24px"
-        android:title="@string/title_profile" />
+        android:title="@string/title_profile"
+        android:fontFamily="@font/robotoregular"/>
 </menu>

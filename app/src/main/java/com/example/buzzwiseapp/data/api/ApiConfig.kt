@@ -5,6 +5,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class ApiConfig {
+
     companion object {
         fun getApiService(): ApiService {
             val loggingInterceptor =
@@ -19,6 +20,9 @@ class ApiConfig {
                 .build()
             return retrofit.create(ApiService::class.java)
         }
+        private var token = ""
+        fun setToken(value: String) {
+            token = value
+        }
     }
-
 }
