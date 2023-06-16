@@ -22,7 +22,7 @@ This application aims to provide recommendations for a job that the user is sear
 
 - [Android Studio](https://developer.android.com/studio) - Electric Eel | 2022.1.1
 - [Kotlin](https://kotlinlang.org/) - 1.8.0
-- [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) - 
+- [Android Architecture Components](https://developer.android.com/topic/libraries/architecture) 
   - [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)
   - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
 - [Datastore](https://developer.android.com/topic/libraries/architecture/datastore)
@@ -39,3 +39,4 @@ Our project divided into 3 different path resources.
 1. [Mobile Development](https://github.com/BuzzWiseTeam/BuzzWiseApp) - This Repository
 2. [Cloud Computing](https://github.com/BuzzWiseTeam/BuzzWiseCloudComputing)
 3. [Machine Learning](https://github.com/BuzzWiseTeam/BuzzWiseMachineLearning)
+4. [Website](https://github.com/BuzzWiseTeam/BuzzWiseWebsite)
