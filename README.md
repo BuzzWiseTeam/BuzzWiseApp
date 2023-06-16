@@ -32,6 +32,7 @@ This application aims to provide recommendations for a job that the user is sear
 - [GSON Converter](https://github.com/square/retrofit/tree/master/retrofit-converters/gson)
 - [Firebase](https://firebase.google.com/docs/android/setup)
 - [Material 3](m3.material.io)
+- [hdodenhof/CircleImageView](https://github.com/hdodenhof/CircleImageView)
   
 # Resources
 Our project divided into 3 different path resources.
