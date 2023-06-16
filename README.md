@@ -1,8 +1,8 @@
 <h1 align="center">Buzz Wise App<h1>
 
-<div align="center">
+<!-- <div align="center">
   <img  src="https://github.com/Rifzzu/Rifzzu/assets/76278250/6db6b91a-76cd-46b7-9ee7-c450b2897acb" alt="alt text" width="250" height="">
-</div>
+</div> -->
 
 # Overview
 Capstone Project Bangkit Academy 2023 Batch 1 (Mobile Development)
