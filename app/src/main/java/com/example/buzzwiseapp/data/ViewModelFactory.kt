@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.buzzwiseapp.data.model.UserPreference
 import com.example.buzzwiseapp.ui.SplashViewModel
 import com.example.buzzwiseapp.ui.auth.LoginViewModel
+import com.example.buzzwiseapp.ui.explore.ExploreViewModel
 import com.example.buzzwiseapp.ui.home.HomeViewModel
 import com.example.buzzwiseapp.ui.profile.ProfileViewModel
 
@@ -23,6 +24,9 @@ class ViewModelFactory(private val pref: UserPreference) : ViewModelProvider.New
             }
             modelClass.isAssignableFrom(ProfileViewModel::class.java) -> {
                 ProfileViewModel(pref) as T
+            }
+            modelClass.isAssignableFrom(ExploreViewModel::class.java) -> {
+                ExploreViewModel() as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }

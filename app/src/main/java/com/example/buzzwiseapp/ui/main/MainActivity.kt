@@ -4,17 +4,12 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
-import android.view.View
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.buzzwiseapp.R
-
 import com.example.buzzwiseapp.databinding.ActivityMainBinding
-import com.example.buzzwiseapp.ui.auth.LoginActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -52,6 +47,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        //Logic dari implementasi Sign In Google
         /*auth = Firebase.auth
         val firebaseUser = auth.currentUser
         if (firebaseUser == null) {

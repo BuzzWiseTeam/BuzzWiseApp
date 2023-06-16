@@ -72,13 +72,14 @@ class LoginActivity : AppCompatActivity() {
         setViewModel()
         setView()
 
-        /*// Configure Google Sign In
+        // Implementasi Sign In menggunakan Google melalui Firebase
+        /* Configure Google Sign In
         val gso = GoogleSignInOptions
             .Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestEmail()
             .build()
         googleSignInClient = GoogleSignIn.getClient(this, gso)
-        // Initialize Firebase Auth
+        Initialize Firebase Auth
         auth = Firebase.auth*/
     }
 
@@ -101,7 +102,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         /*binding.buttonLogin.setOnClickListener{
-            //userLogin()
+            userLogin()
         }*/
     }
 
@@ -156,6 +157,7 @@ class LoginActivity : AppCompatActivity() {
         binding.progressBarMain.visibility= if (isLoading) View.VISIBLE else View.GONE
     }
 
+    //Logic dari implementasi Sign In Google
     /*private fun signIn() {
         val signInIntent = googleSignInClient.signInIntent
         resultLauncher.launch(signInIntent)
