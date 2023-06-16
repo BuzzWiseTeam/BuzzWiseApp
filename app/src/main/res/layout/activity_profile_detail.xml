@@ -17,6 +17,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="30dp"
             android:text="Jonny Sans"
+            android:fontFamily="@font/robotobold"
             android:textSize="25dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -39,6 +40,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="72dp"
             android:text="@string/txt_location"
+            android:fontFamily="@font/robotoregular"
             android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@id/iv_detail"
             app:layout_constraintTop_toTopOf="parent" />
@@ -50,6 +52,7 @@
             android:layout_marginStart="20dp"
             android:padding="5dp"
             android:text="@string/txt_email"
+            android:fontFamily="@font/robotoregular"
             android:textSize="15sp"
             app:layout_constraintStart_toEndOf="@id/iv_detail"
             app:layout_constraintTop_toBottomOf="@+id/tv_location" />
@@ -98,6 +101,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:text="...."
+            android:fontFamily="@font/robotoregular"
             app:layout_constraintStart_toEndOf="@+id/tv_skill"
             app:layout_constraintTop_toBottomOf="@+id/tv_email" />
 
@@ -106,6 +110,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="...."
+            android:fontFamily="@font/robotoregular"
             android:layout_marginTop="12dp"
             android:layout_marginStart="8dp"
             app:layout_constraintStart_toEndOf="@+id/tv_status"
@@ -118,6 +123,7 @@
             android:layout_marginStart="28dp"
             android:layout_marginTop="50dp"
             android:text="@string/txt_profdesc"
+            android:fontFamily="@font/robotobold"
             android:textSize="25dp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -130,17 +136,19 @@
             android:layout_marginStart="28dp"
             android:layout_marginEnd="28dp"
             android:text="@string/txt_jobdescdet"
+            android:fontFamily="@font/robotoregular"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_profdesc" />
 
         <Button
-            android:id="@+id/elevatedButton"
             style="@style/Widget.Material3.Button.ElevatedButton"
+            android:id="@+id/elevatedButton"
             android:layout_width="275dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="Hire"
+            android:fontFamily="@font/robotoregular"
             android:textColor="@color/white"
             app:icon="@drawable/baseline_attach_email_24"
             app:iconGravity="textEnd"

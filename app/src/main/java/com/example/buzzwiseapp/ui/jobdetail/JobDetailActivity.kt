@@ -8,12 +8,14 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.core.app.ActivityOptionsCompat
 import androidx.core.util.Pair
 import androidx.core.view.isVisible
 import com.bumptech.glide.Glide
 import com.example.buzzwiseapp.data.response.DataItem
 import com.example.buzzwiseapp.databinding.ActivityJobDetailBinding
+
 
 class JobDetailActivity : AppCompatActivity() {
 
@@ -42,7 +44,7 @@ class JobDetailActivity : AppCompatActivity() {
         setContentView(binding.root)
         setupView()
         setupViewModel()
-        binding.elevatedButton.setOnClickListener {
+        binding.btnApply.setOnClickListener {
             val intent = Intent(
                 Intent.ACTION_SENDTO, Uri.fromParts(
                     "mailto", "email@email.com", null
@@ -52,6 +54,20 @@ class JobDetailActivity : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_TEXT, binding.tvJobdescdet.text)
             startActivity(Intent.createChooser(intent, "Choose an Email client :"))
         }
+        val toolbar: Toolbar = binding.toolbar
+        setSupportActionBar(toolbar)
+        supportActionBar!!.setHomeButtonEnabled(true)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
     override fun onResume() {

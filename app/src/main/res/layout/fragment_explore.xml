@@ -16,6 +16,7 @@
             android:layout_height="?attr/actionBarSize"
             android:layout_marginHorizontal="16dp"
             android:hint="@string/searchbar_hint"
+            android:fontFamily="@font/robotoregular"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -35,6 +36,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:text="Jobs"
+                android:fontFamily="@font/robotoregular"
                 />
             <Button
                 style="?attr/materialButtonOutlinedStyle"
@@ -42,6 +44,7 @@
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:text="Users"
+                android:fontFamily="@font/robotoregular"
                 />
         </com.google.android.material.button.MaterialButtonToggleGroup>
 

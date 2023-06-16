@@ -1,5 +1,6 @@
 package com.example.buzzwiseapp.ui.main
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -51,16 +52,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        auth = Firebase.auth
+        /*auth = Firebase.auth
         val firebaseUser = auth.currentUser
         if (firebaseUser == null) {
             // Not signed in, launch the Login activity
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
             return
-        }
+        }*/
     }
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+    /*override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
@@ -77,5 +78,13 @@ class MainActivity : AppCompatActivity() {
         auth.signOut()
         startActivity(Intent(this, LoginActivity::class.java))
         finish()
+    }*/
+    companion object {
+        @JvmStatic
+        fun start(context: Context) {
+            val starter = Intent(context, MainActivity::class.java)
+            starter.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+            context.startActivity(starter)
+        }
     }
 }

@@ -31,7 +31,7 @@ data class DataItem(
 	@field:SerializedName("location")
 	val location: String? = null,
 
-	@field:SerializedName("requiredSkill")
+	@field:SerializedName("requiredSkills")
 	val requiredSkill: String? = null,
 
 	@field:SerializedName("id")
