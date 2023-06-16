@@ -8,7 +8,7 @@
 Capstone Project Bangkit Academy 2023 Batch 1 (Mobile Development)
 
 This application aims to provide recommendations for a job that the user is searching for.
-![image](https://github.com/Rifzzu/Rifzzu/assets/76278250/59f22b55-ec4e-4590-a8f4-85e8509242aa)
+![image](https://github.com/Rifzzu/Rifzzu/assets/76278250/64702c66-94fd-4b80-8f94-55058da6f183)
 
 # Prerequisites
 1. Android 
