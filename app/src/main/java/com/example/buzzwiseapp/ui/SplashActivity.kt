@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
-import com.example.buzzwiseapp.R
 import com.example.buzzwiseapp.data.ViewModelFactory
 import com.example.buzzwiseapp.data.model.UserPreference
 import com.example.buzzwiseapp.databinding.ActivitySplashBinding

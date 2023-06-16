@@ -3,7 +3,6 @@ package com.example.buzzwiseapp.ui.profile
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
-import com.example.buzzwiseapp.R
 import com.example.buzzwiseapp.databinding.ActivityEditProfileBinding
 
 class EditProfileActivity : AppCompatActivity() {

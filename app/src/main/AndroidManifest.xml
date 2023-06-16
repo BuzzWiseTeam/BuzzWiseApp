@@ -18,7 +18,7 @@
             android:name=".ui.profile.EditProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.profiledetail.profileDetailActivity"
+            android:name=".ui.profiledetail.ProfileDetailActivity"
             android:exported="false"
             android:theme="@style/Theme.BuzzWiseApp" />
         <activity
