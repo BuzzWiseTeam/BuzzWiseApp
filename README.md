@@ -35,7 +35,7 @@ This application aims to provide recommendations for a job that the user is sear
 - [hdodenhof/CircleImageView](https://github.com/hdodenhof/CircleImageView)
   
 # Resources
-Our project divided into 3 different path resources.
+Our project divided into 4 different path resources.
 1. [Mobile Development](https://github.com/BuzzWiseTeam/BuzzWiseApp) - This Repository
 2. [Cloud Computing](https://github.com/BuzzWiseTeam/BuzzWiseCloudComputing)
 3. [Machine Learning](https://github.com/BuzzWiseTeam/BuzzWiseMachineLearning)
